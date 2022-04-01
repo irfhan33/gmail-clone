@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import MenuIcon from "@mui/icons-material/Menu";
 import { IconButton, Avatar } from "@mui/material";
-
 import SearchIcon from "@mui/icons-material/Search";
 import TuneIcon from "@mui/icons-material/Tune";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import SettingsIcon from "@mui/icons-material/Settings";
 import AppsRoundedIcon from "@mui/icons-material/AppsRounded";
+
 function Header() {
   return (
     <Container>
