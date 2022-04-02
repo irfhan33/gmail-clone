@@ -6,6 +6,9 @@ import StarIcon from "@mui/icons-material/Star";
 import AccessTimeFilledIcon from "@mui/icons-material/AccessTimeFilled";
 import LabelImportantIcon from "@mui/icons-material/LabelImportant";
 import SendIcon from "@mui/icons-material/Send";
+import StickyNote2Icon from "@mui/icons-material/StickyNote2";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import DropdownNavMenu from "./DropdownNavMenu";
 
 function Sidebar() {
   return (
@@ -17,6 +20,22 @@ function Sidebar() {
         <NavMenuItem Icon={AccessTimeFilledIcon} title="Tertunda" number="30" />
         <NavMenuItem Icon={LabelImportantIcon} title="Penting" number="30" />
         <NavMenuItem Icon={SendIcon} title="Terkirim" number="30" />
+        <NavMenuItem Icon={StickyNote2Icon} title="Draft" number="30" />
+        <DropdownNavMenu
+          header={
+            <NavMenuItem Icon={KeyboardArrowDownIcon} title="Selengkapnya" />
+          }
+        >
+          <NavMenuItem Icon={InboxIcon} title="Kotak Masuk" number="30" />
+          <NavMenuItem Icon={StarIcon} title="Berbintang" number="30" />
+          <NavMenuItem
+            Icon={AccessTimeFilledIcon}
+            title="Tertunda"
+            number="30"
+          />
+          <NavMenuItem Icon={LabelImportantIcon} title="Penting" number="30" />
+          <NavMenuItem Icon={SendIcon} title="Terkirim" number="30" />
+        </DropdownNavMenu>
       </NavMenu>
     </Container>
   );
